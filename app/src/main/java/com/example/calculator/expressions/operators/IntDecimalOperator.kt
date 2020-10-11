@@ -25,7 +25,7 @@ abstract class IntDecimalOperator : Operator() {
         return operateWithDecimals(value1, value2)
     }
 
-    abstract fun operateWithInts(value1: BigInteger, value2: BigInteger): Operand<*>
+    protected abstract fun operateWithInts(value1: BigInteger, value2: BigInteger): Operand<*>
 
-    abstract fun operateWithDecimals(value1: BigDecimal, value2: BigDecimal): Operand<*>
+    protected abstract fun operateWithDecimals(value1: BigDecimal, value2: BigDecimal): Operand<*>
 }

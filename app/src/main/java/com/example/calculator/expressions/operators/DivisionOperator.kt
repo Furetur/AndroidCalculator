@@ -14,7 +14,7 @@ object DivisionOperator : DecimalOperator() {
 
     override val precedence = OperatorPrecedence.PRODUCT
 
-    const val PRECISION = 6
+    private const val PRECISION = 6
 
     override fun operateWithDecimals(value1: BigDecimal, value2: BigDecimal) = try {
         val result = value1.divide(value2, PRECISION, RoundingMode.HALF_UP)
