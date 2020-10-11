@@ -7,9 +7,9 @@ jobs:
     steps:
       - checkout:
           path: ~/repo
-      - run:
-          name: Download Dependencies
-          command: ./gradlew androidDependencies
+#      - run:
+#          name: Download Dependencies
+#          command: ./gradlew androidDependencies
       - run:
           name: Run Detekt
           command: ./gradlew detekt
