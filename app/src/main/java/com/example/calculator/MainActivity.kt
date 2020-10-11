@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
             val literal = button.text?.toString() ?: ""
             button.setOnClickListener {
                 val previousText = (expressionField.text ?: "") as String
-                // TODO: this thing
                 expressionField.text = previousText + literal
             }
         }
@@ -84,7 +83,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun showError(text: String) {
+    private fun showError(text: String) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
 }
