@@ -2,8 +2,8 @@ package com.example.calculator.expressions
 
 import com.example.calculator.expressions.operands.Operand
 import com.example.calculator.expressions.operators.Operator
-import java.lang.IllegalArgumentException
-import java.util.*
+import java.util.Stack
+import java.util.EmptyStackException
 
 class PostfixExpression(private val rawExpression: List<ExpressionElement>) {
     companion object {

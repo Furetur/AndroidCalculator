@@ -5,7 +5,7 @@ import com.example.calculator.expressions.operators.Operator
 import com.example.calculator.expressions.parsing.LeftBrace
 import com.example.calculator.expressions.parsing.ParsingException
 import com.example.calculator.expressions.parsing.RightBrace
-import java.util.*
+import java.util.Stack
 
 object InfixToPostfixConverter {
 
@@ -18,7 +18,9 @@ object InfixToPostfixConverter {
                 is Operator -> {
                     while (stack.isNotEmpty()) {
                         val stackElement = stack.peek()
-                        if (stackElement is Operator && element.precedence <= stackElement.precedence) {
+                        if (stackElement is Operator
+                            && element.precedence <= stackElement.precedence
+                        ) {
                             yield(stack.pop())
                         } else {
                             break
@@ -59,7 +61,7 @@ object InfixToPostfixConverter {
             }
         }
         if (counter != 0) {
-             throw UnbalancedParenthesisException()
+            throw UnbalancedParenthesisException()
         }
     }
 

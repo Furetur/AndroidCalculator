@@ -8,6 +8,7 @@ import android.widget.Toast
 import com.example.calculator.expressions.ExpressionEvaluabilityException
 import com.example.calculator.expressions.InfixEvaluator
 import com.example.calculator.expressions.parsing.ParsingException
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 

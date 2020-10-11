@@ -1,6 +1,5 @@
 package com.example.calculator.expressions.operators
 
-import com.example.calculator.expressions.operands.Operand
 import java.math.BigInteger
 
 abstract class DecimalOperator : IntDecimalOperator() {

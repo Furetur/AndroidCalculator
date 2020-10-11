@@ -2,7 +2,6 @@ package com.example.calculator.expressions.operators
 
 import com.example.calculator.expressions.operands.DecimalOperand
 import com.example.calculator.expressions.operands.IntOperand
-import com.example.calculator.expressions.operands.Operand
 import java.math.BigDecimal
 import java.math.BigInteger
 

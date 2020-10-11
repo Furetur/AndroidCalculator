@@ -2,11 +2,8 @@ package com.example.calculator.expressions.operators
 
 import com.example.calculator.expressions.ExpressionEvaluabilityException
 import com.example.calculator.expressions.operands.DecimalOperand
-import com.example.calculator.expressions.operands.IntOperand
-import com.example.calculator.expressions.operands.Operand
 import java.lang.ArithmeticException
 import java.math.BigDecimal
-import java.math.BigInteger
 import java.math.RoundingMode
 
 object DivisionOperator : DecimalOperator() {

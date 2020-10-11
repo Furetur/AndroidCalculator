@@ -5,7 +5,7 @@ import com.example.calculator.expressions.operators.MinusOperator
 import com.example.calculator.expressions.operators.PlusOperator
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertThrows
+import java.lang.Exception
 
 internal class PostfixExpressionTest {
     private fun testOnExpression(expression: PostfixExpressionGenerator.PostfixInfixExpression) {

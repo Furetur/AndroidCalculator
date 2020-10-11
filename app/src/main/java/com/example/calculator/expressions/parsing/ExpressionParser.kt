@@ -11,18 +11,18 @@ import java.math.BigInteger
 
 object ExpressionParser {
 
-    const val POINT = '.'
+    private const val POINT = '.'
 
-    val operatorSymbols = listOf(
+    private val operatorSymbols = listOf(
         PlusOperator.symbol,
         MinusOperator.symbol,
         ProductOperator.symbol,
         DivisionOperator.symbol
     )
 
-    val braceSymbols = listOf(LeftBrace.symbol, RightBrace.symbol)
+    private val braceSymbols = listOf(LeftBrace.symbol, RightBrace.symbol)
 
-    val infixOperatorSymbols = operatorSymbols + braceSymbols
+    private val infixOperatorSymbols = operatorSymbols + braceSymbols
 
     private val numerals = ('0'..'9') + '.'
 

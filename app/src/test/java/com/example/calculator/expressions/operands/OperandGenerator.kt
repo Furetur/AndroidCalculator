@@ -16,6 +16,7 @@ object OperandGenerator {
 
     fun makeBigDecimalOperand(size: Int): DecimalOperand =
         DecimalOperand(
-            BigDecimal.TEN.pow(size).divide(BigDecimal.valueOf(3), 10, RoundingMode.HALF_UP)
+            BigDecimal.TEN.pow(size)
+                .divide(BigDecimal.valueOf(3), 10, RoundingMode.HALF_UP)
         )
 }

@@ -8,7 +8,6 @@ import java.math.BigInteger
 
 abstract class IntDecimalOperator : Operator() {
     override fun operate(operand1: Operand<*>, operand2: Operand<*>): Operand<*> {
-
         if (operand1 is IntOperand && operand2 is IntOperand) {
             return operateWithInts(operand1.value, operand2.value)
         }
