@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     fun tryEvaluateExpression() {
         val expression = expressionField.text.toString()
         try {
-            val result = InfixEvaluator.evaluate(expression).toString()
+            val result = InfixEvaluator.evaluate(expression).value.toString()
             expressionField.text = result
         } catch (e: ExpressionEvaluabilityException) {
             e.message?.let { showError(it) } ?: showError("Could not evaluate")
