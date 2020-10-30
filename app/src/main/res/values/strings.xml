@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="equalsSign">=</string>
+    <string name="minusSign">-</string>
+    <string name="divisionSign">/</string>
+    <string name="rightBrace">)</string>
+    <string name="leftBrace">(</string>
+    <string name="plusSign">+</string>
+    <string name="multiplicationSign">*</string>
+    <string name="zeroDigit">0</string>
+    <string name="pointSymbol">.</string>
+    <string name="nineDigit">9</string>
+    <string name="eightDigit">8</string>
+    <string name="oneDigit">1</string>
+    <string name="twoDigit">2</string>
+    <string name="threeDigit">3</string>
+    <string name="fourDigit">4</string>
+    <string name="fiveDigit">5</string>
+    <string name="sixDigit">6</string>
+    <string name="sevenDigit">7</string>
+    <string name="backspaceSymbol"><![CDATA[<-]]></string>
+</resources>
